@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.KyTheKitty/verifyapi",
+  "title": "VerifyAPI \u2014 fact-check with signed receipts",
+  "description": "Fact-check any claim with live web sources. Ed25519-signed receipts. Catches hallucinations.",
+  "version": "0.1.9",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@verify-api/mcp",
+      "version": "0.1.9",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VERIFYAPI_API_KEY",
+          "description": "Your VerifyAPI key (csk_live_...). Get one free at https://verify-api.dev/signup \u2014 no card required. Unset = free trial (3 calls per IP per 24h, cached tier, signed receipts still included).",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "VERIFYAPI_BASE_URL",
+          "description": "Override the API base URL. Defaults to https://api.verify-api.dev.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/KyTheKitty/verifyapi-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://verify-api.dev"
+}

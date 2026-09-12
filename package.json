@@ -1,0 +1,59 @@
+{
+  "name": "@verify-api/mcp",
+  "version": "0.1.9",
+  "mcpName": "io.github.KyTheKitty/verifyapi",
+  "description": "MCP server for VerifyAPI \u2014 fact-check any claim against live web sources with a signed Ed25519 receipt. Tiered freshness (default / recent / fresh), $0.02 base per verified claim, free trial via /v1/verify/trial. One tool: verify_claim.",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "fact-check",
+    "fact-checking",
+    "verify-claim",
+    "claim-verification",
+    "hallucination",
+    "grounding",
+    "citations",
+    "receipts",
+    "ai-agent",
+    "agent-tools",
+    "llm",
+    "anthropic",
+    "openai",
+    "verifyapi",
+    "x402"
+  ],
+  "homepage": "https://verify-api.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyTheKitty/verifyapi-mcp.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "verifyapi-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/server.js",
+    "prepack": "chmod +x dist/server.js",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bugs": {
+    "url": "https://github.com/KyTheKitty/verifyapi-mcp/issues"
+  }
+}
