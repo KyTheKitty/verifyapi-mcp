@@ -22,7 +22,7 @@
 }
 ```
 
-**No API key?** Leave `VERIFYAPI_API_KEY` unset for the free trial (limited daily calls, no receipts). Get a free key at https://verify-api.dev/signup — no credit card required.
+**No API key?** Leave `VERIFYAPI_API_KEY` unset for the free trial (limited to 3 calls per IP per 24h, signed receipts included). Get a free key at https://verify-api.dev/signup — no credit card required.
 
 ## The one tool: `verify_claim`
 
