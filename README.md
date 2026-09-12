@@ -56,7 +56,7 @@ Because "the AI checked" is not the same as "the AI verified." A signed receipt 
 
 ## Pricing
 
-- **Free trial**: no signup, no card. Limited daily calls. No receipts (verdict only).
+- **Free trial**: no signup, no card. Limited to 3 calls per IP per 24h. Includes signed receipts.
 - **With API key**: $0.02 per verified claim. Unverifiable / out-of-scope calls are free (you don't pay for "I couldn't find enough evidence").
 - **Freshness tiers**: standard verification $0.02, real-time (fresh-fetch) $0.05.
 - **Auto top-up**: save a card, set a threshold, keep flowing. `POST /v1/balance/autorefill`.
